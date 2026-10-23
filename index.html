@@ -21,18 +21,13 @@
     <div class="container">
         <a class="logo" href="/">
             <span class="logo-mark" aria-hidden="true">
-                <svg width="23" height="28" viewBox="0 0 22 27" fill="none">
-          <g stroke="var(--ink)" stroke-width="1.3" stroke-linecap="round">
-            <path d="M11 0.9V8.4"></path>
-            <path d="M9 2.6h4"></path>
-            <path d="M7.6 4.7h6.8"></path>
-            <path d="M8.7 6.3l4.6 1.1"></path>
-          </g>
-          <path d="M6.5 17C3 13 8 10.6 11 8.4c3 2.2 8 4.6 4.5 8.6z" fill="var(--dome)" stroke="var(--ink)"
-                stroke-width="1.2" stroke-linejoin="round"></path>
-          <rect x="6" y="17" width="10" height="9" rx="1" fill="var(--wood)" stroke="var(--ink)"
-                stroke-width="1.2"></rect>
-        </svg>
+                <svg width="32" height="32" viewBox="0 0 96 96" fill="none"
+                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke-linejoin="round">
+        <path d="M43 12H53V19H65V28H53V35H76V44H53V65L60 70V80L53 75V84H43V67L35 61V51L43 57V44H20V35H43V28H30V19H43Z"
+              fill="#49423d" stroke="#423B78" stroke-width="3"/>
+    </g>
+</svg>
             </span>
             <span class="logo-name">Храм Бориса и Глеба <small>Екатеринбург</small></span>
         </a>
@@ -54,16 +49,15 @@
     <section class="hero">
         <div class="container">
             <div>
-                <span class="hero-place">
+                <a href="#contacts" class="hero-place">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                      stroke-width="2"  aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
                 ул. Раевского, 9А
-            </span>
+            </a>
                 <div class="hero-text">
                     <h1>Храм святых благоверных князей Бориса и Глеба</h1>
-                    <p class="lead">Приходите на службу, поставить свечу или просто побыть в тишине.</p>
                     <div class="actions">
-                        <a class="btn btn-main" href="#schedule">Расписание служб</a>
+                        <a class="btn btn-main" href="#schedule">Расписание</a>
                         <a class="btn btn-soft" href="#contacts">Как добраться</a>
                     </div>
                     <div class="next">
@@ -85,16 +79,17 @@
             <div class="panel schedule">
                 <div class="sec-head">
                     <h2>Расписание на неделю</h2>
+                    <p class="period">5-11 октября</p>
                     <a class="link" href="#">Расписание на месяц</a>
                 </div>
                 <div class="days">
                     <article class="day today">
                         <div class="day-top">
                             <span class="day-num">4</span>
+                            <span class="tag">сегодня</span>
                             <span class="day-name">
                                     <b>Воскресенье</b>
-                                    <span class="tag">сегодня</span>
-                                </span>
+                            </span>
                         </div>
                         <ul class="svc">
                             <li>
@@ -158,7 +153,6 @@
         <div class="container">
             <div class="sec-head">
                 <h2>Новости прихода</h2>
-                <a class="link" href="https://vk.com/hramborisagleba">Все новости ВКонтакте</a>
             </div>
             <div class="posts">
                 <article class="post">
@@ -220,27 +214,20 @@
     </section>
     <section id="notes">
         <div class="container duo">
-            <div class="card notes">
-                <h2>Записки о здравии и упокоении</h2>
-                <p>Можно подать прямо на сайте: выберите вид поминовения и впишите имена. Оплатить можно в храме или
-                    переводом.</p>
-                <ul class="price">
-                    <li><span>Проскомидия</span><b>15 ₽ за имя</b></li>
-                    <li><span>Заказная литургия</span><b>30 ₽ за имя</b></li>
-                    <li><span>Панихида</span><b>30 ₽ за имя</b></li>
-                    <li><span>Сорокоуст</span><b>300 ₽ за имя</b></li>
-                </ul>
-                <a class="btn btn-main" href="#">Подать записку</a>
+            <div class="card notes-health">
+                <h2>Записки о здравии</h2>
+                <p>Можно подать прямо на сайте: выберите вид поминовения и впишите имена.</p>
+                <a class="btn btn-health" href="#">Подать записку</a>
+            </div>
+
+            <div class="card notes-soul">
+                <h2>Записки об упокоении</h2>
+                <p>Можно подать прямо на сайте: выберите вид поминовения и впишите имена.</p>
+                <a class="btn btn-soul" href="#">Подать записку</a>
             </div>
             <div class="card treby">
                 <h2>Таинства и требы</h2>
                 <p>О дне и времени договоритесь заранее: позвоните в храм или подойдите в церковную лавку.</p>
-                <ul class="price">
-                    <li><span>Крещение</span><b>2 000 ₽</b></li>
-                    <li><span>Венчание</span><b>3 500 ₽</b></li>
-                    <li><span>Соборование</span><b>400 ₽</b></li>
-                    <li><span>Отпевание</span><b>4 000 ₽</b></li>
-                </ul>
                 <a class="btn btn-soft" href="tel:+73432194949">Позвонить в храм</a>
             </div>
         </div>
